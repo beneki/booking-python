@@ -12,16 +12,9 @@ from cryptography.fernet import Fernet
 
 app = Flask(__name__)
 
-client = MongoClient(
-    "mongodb+srv://mahyargp:1370azizi@cluster0.sjw0x.mongodb.net/sample_airbnb?retryWrites=true&w=majority")
+# client = MongoClient(your mongo database connection)
 db = client.sample_airbnb
 
-# client = MongoClient(
-#     "mongodb://mahyargp:1370azizi@cluster0.sjw0x.mongodb.net:27017/")
-# db = client['sample_airbnb']
-# app.config["MONGO_DBNAME"] = "sample_airbnb"
-# app.config["MONGO_URI"] = "mongodb://mahyargp:1370azizi@cluster0.sjw0x.mongodb.net:27017/sample_airbnb"
-#
 CORS(app)
 # mongo = PyMongo(app)
 
